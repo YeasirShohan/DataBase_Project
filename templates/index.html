@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GYM Management</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <div>Fitness Management</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li> 
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <a href="{% url 'login' %}"target="_blank"><button class="btn">Login</button></a>
+            <a href="{% url 'signup' %}" target="_blank"><button class="btn">Sign up</button></a>
+        </div>
+        <center class="mid text">Welcome to the best gym in Daffodil</center> 
+    </header>
+    
+</body>
+</html>

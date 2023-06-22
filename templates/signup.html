@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+</head>
+<body>
+    <form action=""method="post">
+     {% csrf_token %}
+        <div class="container">
+               <div class="form-group">
+                    <input type="name" placeholder="Enter your name!" required class="form-group" name="name">
+               </div>
+               <div class="form-group">
+                    <input type="age" placeholder="Enter your Age!" required class="form-group" name="age">
+               </div>
+               <div class="form-group">
+                    <input type="gender" placeholder="Enter your Gender!" required class="form-group" name="gender">
+               </div>
+               <div class="form-group">
+                    <input type="number" placeholder="Enter your Number!" required class="form-group" name="number">
+               </div>
+               <div class="form-group">
+                    <input type="email" placeholder="Enter your Email!" required class="form-group" name="email">
+               </div>
+               <div class="form-group">
+                    <input type="password" placeholder="Enter your Password!" required class="form-group" name="password">
+               </div>
+               <div class="form-group">
+                    <input type="submit" value="Submit" class="btn">
+               </div>
+        </div>
+    </form>
+</body>
+</html>
