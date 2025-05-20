@@ -1,3 +1,1 @@
-# gym-management
-Gym Management Application
-Written in Python-Django
+RDBMS Administrator Projects
