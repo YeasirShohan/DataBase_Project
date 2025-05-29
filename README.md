@@ -1,1 +1,1 @@
-RDBMS Administrator Projects
+Gym Management Application. Build With DJANGO.
